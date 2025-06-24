@@ -14,6 +14,15 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Set Up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '20' # Specify the Node.js version you need
+      - name: Install Dependencies
+        run: npm install
+      - name: Build Project
+        run: npm run build # Adjust this command if your build script is different
+
       - name: Upload via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
