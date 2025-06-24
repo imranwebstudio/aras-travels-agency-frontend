@@ -29,6 +29,6 @@ jobs:
           server: meghna.satisfyhost.com
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: /home/liservic/imran/ # Replace with your target directory
+          server-dir: /home # Replace with your target directory
           local-dir: ./dist # Directory of your project (adjust if needed)
           port: 21
